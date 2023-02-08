@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "F:/me/icpc/Recursion/cmake-build-debug",
-		"source" : "F:/me/icpc/Recursion"
+		"build" : "F:/me/problem-solving/Recursion/cmake-build-debug",
+		"source" : "F:/me/problem-solving/Recursion"
 	},
 	"version" : 
 	{

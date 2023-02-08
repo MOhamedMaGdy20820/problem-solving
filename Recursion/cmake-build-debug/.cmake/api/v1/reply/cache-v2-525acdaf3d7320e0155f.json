@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "f:/me/icpc/Recursion/cmake-build-debug"
+			"value" : "f:/me/problem-solving/Recursion/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "F:/me/icpc/Recursion"
+			"value" : "F:/me/problem-solving/Recursion"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "F:/me/icpc/Recursion/cmake-build-debug"
+			"value" : "F:/me/problem-solving/Recursion/cmake-build-debug"
 		},
 		{
 			"name" : "untitled18_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "F:/me/icpc/Recursion"
+			"value" : "F:/me/problem-solving/Recursion"
 		}
 	],
 	"kind" : "cache",
