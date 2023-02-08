@@ -1,0 +1,42 @@
+ll BinarySearch(vector<ll>arr , ll target)
+{
+    ll l = 0 , r = arr.size()-1;
+    while(l<=r)
+    {
+        ll mid = l + (r-l)/2;
+
+        if(arr[mid]==target) return mid;
+        else if (arr[mid]<target) l=mid+1;
+        else r = mid -1;
+    }
+    return -1;
+}
+
+
+ll lower (vector<ll>arr , ll target) {  //find first true value
+    ll ans = -1;
+    ll l = 0 , r = arr.size()-1;
+    while (l<=r)
+    {
+        ll mid = l + (r-l)/2;
+        if(arr[mid]>=target) {
+            ans = mid;
+            r=mid-1;
+        }
+        else { l = mid + 1;}
+    }
+    return ans;
+}
+
+ll sqrt (float sqrt) {
+    ll l = 0 , r = sqrt;
+    while (r-l>eps)        // eps =  الدقه
+    {
+        float mid = l + (r-l)/2;
+        if(mid*mid < sqrt) {
+            l = mid;
+        }
+        else {r=mid;}
+    }
+    return l + (r-l)/2;
+}

@@ -1,0 +1,72 @@
+int r = m & (1<<i)  //اشوف بت معينه 0 ولا 1  
+m |= ( 1 << i )     // setbit
+m &= ~(1ll << i )    // clear bit  ll= long long
+x | (1 << n)       // make sit for specific bit
+x ^ ( x & (x-1)) equal x & (-x)   // بعرف مكان اول بت
+x>>k = x/(2**k)
+
+ممكن استخدمها ك فركونسي اراي
+
+bool isPowerOfTwo(int x)
+    {
+        // x will check if x == 0 and !(x & (x - 1)) will check if x is a power of 2 or not
+        return (x && !(x & (x - 1)));
+    }
+
+
+
+// n&(n-1) remove first one in number
+// 01110
+// 01101
+// -----
+// 01100
+//Complexity: O(K), where K is the number of ones present in the binary form of the given number.
+
+int count_one (int n)    
+        {
+            while( n )
+            {
+            n = n&(n-1);
+               count++;
+            }
+            return count;
+    }
+
+
+void possibleSubsets(int A[], int N)
+{
+    for(int i = 0;i < (1 << N); ++i)
+    {
+        for(int j = 0;j < N;++j)
+            if(i & (1 << j))
+                cout << A[j] <<" ";
+        cout << endl;
+    }
+}
+
+
+ most significant bit (MSB)
+least significant bit (LSB) 
+
+MSB                                                     LSB
+1	0	0	1	0	1	0	1
+2**7	2**6	2**5	2**4	2**3	2**2	2**1	2**0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
