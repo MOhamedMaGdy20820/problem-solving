@@ -163,6 +163,7 @@ int main(){
     //cout<<fastPower(2,10);
    // cout<<5%3<<" "<<(-5)%3;
    cout<<"k;dshkj";
+   cout<<"m";
 }
 /*
 2 3 5 7 11
