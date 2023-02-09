@@ -5,7 +5,7 @@ using namespace std;
 typedef long long ll;
 #define all(x) x.begin(), x.end()
 #define fast cin.tie(0); cin.sync_with_stdio(0); cout.tie(0);
-
+/*
 int x,y;
 ll arr[21];
 bool solve(ll index = -1, ll sum=0 ) {
@@ -33,7 +33,8 @@ void s(int idx,int sum)
     s(idx+1,sum+a[idx]);
     s(idx+1,sum);
 }
-
+*/ //(1)
+/*
 ll arr2[1000][1000],N;
 ll f(int r=0 , int d =0)
 {
@@ -47,8 +48,24 @@ ll f(int r=0 , int d =0)
     return arr2[r][d]+ max(sum1,sum2);
 
 }
+*/ //(2)
+/*
+int arr[1000],n;
 
+int solve(int index = 0)
+{
+    if(index==n) return 1;
 
+    if(arr[index+1]>=arr[index])
+    {
+        int sum1 = 1+ solve(index+1);
+        int sum2 = solve(index+1);
+        return max(sum1,sum2);
+    }
+    return solve(index+1);
+}
+*/ //(3)
+/*
 char a1[1000][1000],a2[1000][1000],a3[1000][1000]; ll Y;
 
 bool solve2 (ll i , ll j)
@@ -64,37 +81,36 @@ bool solve2 (ll i , ll j)
     if(solve2(i-1,j))return 1;
     if(solve2(i,j-1))return 1;
 
-}
-
-
-
-
+}*/ //(4)
 int main(){
-
  /*   cin>>x>>y;
     for (int i = 0; i < x; ++i) {
         cin>>arr[i];
     }
 
    if( solve())cout<<"Yes";
-   else cout<<"NO";*/
-
+   else cout<<"NO";*/ //
  /*   cin >>n>>k;
     for(int i=0;i<n;i++) cin >>a[i];
     s(0,0);
 
     if(flag) cout <<"YES\n";
-    else cout << "NO\n";*/
-
-   /* cin>>N;
+    else cout << "NO\n";*/ //(1)
+ /* cin>>N;
     for (int i = 0; i < N; ++i) {
         for (int j = 0; j < N; ++j) {
             cin>>arr2[i][j];
         }
-    }*/
+    }*/ //(2)
+ /*
+ cin>>n;
+    for (int i = 0; i < n; ++i) {
+        cin>>arr[i];
+    }
 
-
-    cin>>Y;
+    cout<<solve();
+    */  //(3)
+ /*   cin>>Y;
     for (int i = 0; i < Y; ++i) {
         for (int j = 0; j < Y; ++j) {
             cin>>a1[i][j];
@@ -129,7 +145,7 @@ int main(){
             cout<<a3[i][j]<<" ";
         }
         cout<<endl;
-    }
+    }*/ //(4)
 
 
     return 0;
