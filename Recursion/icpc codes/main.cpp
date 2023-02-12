@@ -55,13 +55,8 @@ int arr[1000],n;
 int solve(int index = 0)
 {
     if(index==n) return 1;
-
     if(arr[index+1]>=arr[index])
-    {
-        int sum1 = 1+ solve(index+1);
-        int sum2 = solve(index+1);
-        return max(sum1,sum2);
-    }
+        return max(1+ solve(index+1),solve(index+1));
     return solve(index+1);
 }
 */ //(3)
@@ -102,14 +97,13 @@ int main(){
             cin>>arr2[i][j];
         }
     }*/ //(2)
- /*
  cin>>n;
     for (int i = 0; i < n; ++i) {
         cin>>arr[i];
     }
 
     cout<<solve();
-    */  //(3)
+     //(3)
  /*   cin>>Y;
     for (int i = 0; i < Y; ++i) {
         for (int j = 0; j < Y; ++j) {

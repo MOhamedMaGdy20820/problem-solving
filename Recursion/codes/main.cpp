@@ -121,7 +121,7 @@ ll indexT;
  {
      if(power==0)return 1;
 
-     ll res = fastPower(base,power/2);
+     ll res = fastPower((base,power/2)% MOD);
 
      if(power%2) return res*res*base;
      else return res* res;
@@ -160,10 +160,10 @@ int main(){
     } while (next_permutation(arr,arr+5));
     cout<<0;return 0;*/
     //-----------------------------------------------------
-    //cout<<fastPower(2,10);
+    ll n,m;cin>>n>>m;
+    cout<<fastPower(n,m);
    // cout<<5%3<<" "<<(-5)%3;
-   cout<<"k;dshkj";
-   cout<<"m";
+
 }
 /*
 2 3 5 7 11

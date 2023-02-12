@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "F:/me/problem-solving/Recursion/cmake-build-debug",
-		"source" : "F:/me/problem-solving/Recursion"
+		"build" : "F:/me/problem-solving/Recursion/codes/cmake-build-debug",
+		"source" : "F:/me/problem-solving/Recursion/codes"
 	},
 	"version" : 
 	{
